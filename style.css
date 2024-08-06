@@ -109,6 +109,7 @@ body {
 
 .chamada {
     background-image: url(background-chamada.svg);
+    border-image: fill 0 linear-gradient(#0001, #000);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -122,7 +123,7 @@ body {
 }
 
 .chamada-tela1 div {
-    width: 30%;
+    width: 45%;
 }
 
 .chamada-tela1 div h1 {
@@ -145,7 +146,6 @@ body {
     border: none;
 }
 
-.imgmaq {
+.img-maq {   
     width: 100%;
-    transform: scaleX(-1);
 }
