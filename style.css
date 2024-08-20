@@ -1,0 +1,306 @@
+:root {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    margin: 0 10rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.cabecalho-principal {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.contatoc {
+    background-color: transparent;
+    color: rgb(228, 222, 217);
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.3s;
+    height: 40px;
+    align-items: center;
+}
+
+.contatoc div {
+    width: 30%;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
+
+.contatoc div:nth-child(2) {
+    justify-content: center;
+    gap: 10px;
+    width: 15%;
+    color: rgb(172, 0, 0);
+}
+
+.contatoc div span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: 0.2s;
+}
+
+.contatoc div span:hover {
+    cursor: pointer;
+    color: rgb(228, 222, 217);
+    transition: 0.2s;
+}
+
+.contatoc div span i {
+    font-size: 20px;
+}
+
+.cabecalho a:nth-child(1) {
+    color: red;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.cabecalho a:nth-child(1):hover {
+    color: rgb(228, 222, 217);
+    font-weight: 350;
+    transition: 0.2s;
+}
+
+.cabecalho a {
+    text-decoration: none;
+    color: rgb(228, 222, 217);
+    font-weight: 350;
+    transition: 0.2s;
+}
+
+.cabecalho a:hover {
+    color: red;
+    transition: 0.2s;
+    font-weight: 600;
+}
+
+.cabecalho img {
+    height: 95px;
+    margin-left: 12rem;
+}
+
+.menu {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 12rem;
+}
+
+/* tela 1 */
+
+.chamada {
+    background-image: url(background-chamada.svg);
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    border-image: fill 0 linear-gradient(#0001 0%, #101010 99%);
+}
+
+.chamada-tela1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(228, 222, 217);
+    margin-top: 8rem;
+}
+
+.chamada-tela1 div {
+    width: 45%;
+}
+
+.chamada-tela1 div h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.chamada-tela1 div:first-child {
+    width: 50%;
+}
+
+.chamada-tela1 div button {
+    background-color: rgb(172, 0, 0);
+    border: none;
+    width: 200px;
+}
+
+.chamada-tela1 div button:hover {
+    background-color: rgb(99, 0, 0);
+    border: none;
+}
+
+.img-maq {
+    width: 100%;
+}
+
+/* chamada */
+
+.conteudo {
+    background-image: url(imgbracos.jpg);
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-image: fill 0 linear-gradient(#101010 0%, #0001 60%);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.texto1 {
+    color: rgb(228, 222, 217);
+    width: 40%;
+    font-size: 1.3rem;
+    margin-right: 6.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.texto1::after {
+    content: '';
+    position: absolute;
+    bottom: 0.6rem;
+    width: 100%;
+    height: 0.3rem;
+    background: rgb(172, 0, 0);
+    transition: all 300ms ease-in-out;
+    left: 0;
+}
+
+.texto1:hover::after {
+    width: 50%;
+    left: 25%;
+    right: 25%;
+}
+
+.texto1 p span:last-child {
+    color: rgb(172, 0, 0);
+}
+
+.servicos {
+    background-image: url(background-chamada.svg);
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.servicos .quadros {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    top: -4rem;
+}
+
+.servicos .quadros div {
+    width: 22%;
+    height: 350px;
+    background-color:rgb(228, 222, 217);
+    box-shadow: 3px 2px 20px 5px rgba(0, 0, 0, 0.664);
+    border-radius: 5px;
+    text-align: center;
+    padding: 17px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.servicos .quadros div img {
+    position: absolute;
+    width: 150px;
+    bottom: -25%;
+    transform: translateX(-50%);
+}
+
+.servicos .quadros div:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Slides */
+
+.slides {
+    background-image: url(background-chamada.svg);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+}
+
+.slides h2 {
+    position: absolute;
+    text-align: center;
+    top: -4rem;
+    color: rgb(228, 222, 217);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.slides-conteudo {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.swiper {
+    width: 100%;
+    position: relative;
+}
+
+.swiper-slide {
+    max-width: 36.35%;
+    width: 100%;
+    overflow: visible;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Visão */
+
+.visao {
+    background-image: url(background-valores.png);
+    height: 800px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #101010;
+}
+
+.teste {
+    background-image: url(background-chamada.svg);
+    height: 800px;
+}
