@@ -5,7 +5,7 @@
     font-style: normal;
 }
 
-.container {
+.container-conteudo {
     margin: 0 10rem;
 }
 
@@ -181,6 +181,11 @@ body {
     font-weight: bold;
     position: relative;
     margin-bottom: 4rem;
+    text-shadow: 
+        1px 1px 0px black,
+        -1px 1px 0px black,
+        1px -1px 0px black,
+        -1px -1px 0px black;
 }
 
 .texto1::after {
@@ -223,7 +228,7 @@ body {
 .servicos .quadros div {
     width: 22%;
     height: 350px;
-    background-color:rgb(228, 222, 217);
+    background-color: rgb(228, 222, 217);
     box-shadow: 3px 2px 20px 5px rgba(0, 0, 0, 0.664);
     border-radius: 5px;
     text-align: center;
@@ -300,7 +305,42 @@ body {
     background-color: #101010;
 }
 
-.teste {
+.contato {
+    display: flex;
+    align-items: center;
     background-image: url(background-chamada.svg);
     height: 800px;
 }
+
+.contato-conteudo {
+    height: auto;
+    width: 100%;
+    background-color: #c3c2be;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.atendente, .contato-form {
+    width: 45%;
+    margin: 0 5rem;
+}
+
+.contato-conteudo img {
+    width: 100%;
+}
+
+.form-control {
+    width: 60%;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-group {
+    margin: 0 0 10px 0;
+}
+
