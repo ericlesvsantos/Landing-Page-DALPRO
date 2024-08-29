@@ -12,6 +12,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-image: url(background-chamada.svg);
 }
 
 .cabecalho {
@@ -115,7 +116,6 @@ body {
 /* tela 1 */
 
 .chamada {
-    background-image: url(background-chamada.svg);
     height: 70vh;
     display: flex;
     align-items: center;
@@ -182,10 +182,10 @@ body {
     position: relative;
     margin-bottom: 4rem;
     text-shadow: 
-        1px 1px 0px black,
-        -1px 1px 0px black,
-        1px -1px 0px black,
-        -1px -1px 0px black;
+        0.55px 0.55px 0px black,
+        -0.55px 0.55px 0px black,
+        0.55px -0.55px 0px black,
+        -0.55px -0.55px 0px black;
 }
 
 .texto1::after {
@@ -209,8 +209,9 @@ body {
     color: rgb(172, 0, 0);
 }
 
+/*servicos*/
+
 .servicos {
-    background-image: url(background-chamada.svg);
     height: 600px;
     display: flex;
     justify-content: center;
@@ -253,7 +254,6 @@ body {
 /* Slides */
 
 .slides {
-    background-image: url(background-chamada.svg);
     position: relative;
     display: flex;
     align-items: center;
@@ -308,7 +308,6 @@ body {
 .contato {
     display: flex;
     align-items: center;
-    background-image: url(background-chamada.svg);
     height: 800px;
 }
 
@@ -344,3 +343,68 @@ body {
     margin: 0 0 10px 0;
 }
 
+/*rodape*/
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+    background-color: #101010;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.rodape-img, .rodape-icons, .rodape-telefone-email {
+    width: 25%;
+    color: white;
+}
+
+.rodape div img {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.rodape-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape-icons {
+    gap: 20px;
+    display: flex;
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape-telefone-email {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.div-telefone, .div-email {
+    width: 100%;
+}
+
+.direitos{
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(172, 0, 0);
+    padding: 1rem 10rem;
+    color: white;
+    display: flex;
+}
+
+.direitos a {
+    text-decoration: none;
+    color: #101010;
+    font-weight: 600;
+}
